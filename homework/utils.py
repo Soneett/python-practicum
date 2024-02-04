@@ -12,12 +12,6 @@ def getFiboClassic(n):
     return fibo2
 
 
-def getFiboRecursive(n):
-    if n in (1, 2):
-        return 1
-    return getFiboRecursive(n - 1) + getFiboRecursive(n - 2)
-
-
 def getFiboMoivreBinet(n):
     return round(((((1+math.sqrt(5))/2)**n)
                  - (((1-math.sqrt(5))/2)**n))/math.sqrt(5))
